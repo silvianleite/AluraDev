@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+    <link rel="stylesheet" href="dracula.css">
+    <link rel="stylesheet" href="styleComu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabeçalho__container">
+        <img class="cabeçalho__imagem" src="img/Logo.svg" alt="Logo da AluraDev">
+    
+        <div class="cabeçalho__pesquisa-ícone">
+            <img class="cabeçalho__pesquisa-lupa" src="img/pesquisar.svg" alt="">
+            <input type="search" placeholder="Busque por algo" class="cabeçalho__pesquisa">
+        </div>
+
+        <div class="cabeçalho__usuário">
+            <img src="img/Photo.svg" alt="Foto do perfil" class="cabeçalho__usuário-foto">
+            <span class="cabeçalho__usuário-nome">Harry</span>
+        </div>
+
+        <div class="cabeçalho__menu">
+            <button class="cabeçalho__menu-botão">
+                <img class="cabeçalho__menu-imagem" src="img/menu.svg" alt="Menu" class="cabeçalho__usuário-foto">
+            </button>
+        </div>
+
+    </header>
+
+    <section class="container">
+        <aside class="menu__lateral">
+            <ul class="menu__lateral-lista">
+                <li class="menu__lateral-item menu">
+                        <p class="menu__lateral-titulo">MENU</p>
+                </li>
+                <li class="menu__lateral-item btn-editor">
+                    <a class="menu__lateral-link" href="#">
+                        <img class="menu__lateral-imagem btn-code" src="img/icon_page_code.svg" alt="ícone do editor de código">
+                        <p class="menu__lateral-texto">Editor de código</p>
+                    </a>
+                </li>
+                <li class="menu__lateral-item btn-comunidade">
+                    <a class="menu__lateral-link" href="#">
+                        <img class="menu__lateral-imagem btn-user" src="img/Icon_page_comu.svg" alt="ícone comunidade">
+                        <p class="menu__lateral-texto">Comunidade</p>
+                    </a>
+                </li>
+                <li class="menu__lateral-item usuário">
+                    <a class="menu__lateral-link" href="#">
+                        <img class="menu__lateral-imagem" src="img/Photo.svg" alt="Foto do usuário">
+                        <p class="menu__lateral-texto">Harry</p>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="projetos">
+        </section>
+
+    </section>
+    <script src="js/mostrarMenu.js"></script>
+    <script src="js/mostrarBarra.js"></script>
+    <script src="js/mudarPagina.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script>
+    <script src="js/exibirCard.js"></script>
+    <script src="js/clicarCard.js"></script>
+    <script src="js/curtir.js"></script>
+</body>
+</html>

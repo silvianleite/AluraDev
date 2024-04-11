@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+    <link rel="stylesheet" href="dracula.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--<script src="js/html2canvas.min.js"></script>-->
+    <script src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+    </script>
+</head>
+<body>
+    <header class="cabeçalho__container">
+        <img class="cabeçalho__imagem" src="img/Logo.svg" alt="Logo da AluraDev">
+    
+        <div class="cabeçalho__pesquisa-ícone">
+            <img class="cabeçalho__pesquisa-lupa" src="img/pesquisar.svg" alt="">
+            <input type="search" placeholder="Busque por algo" class="cabeçalho__pesquisa">
+        </div>
+
+        <div class="cabeçalho__usuário">
+            <img src="img/Photo.svg" alt="Foto do perfil" class="cabeçalho__usuário-foto">
+            <span class="cabeçalho__usuário-nome">Harry</span>
+        </div>
+
+        <div class="cabeçalho__menu">
+            <button class="cabeçalho__menu-botão">
+                <img class="cabeçalho__menu-imagem" src="img/menu.svg" alt="Menu" class="cabeçalho__usuário-foto">
+            </button>
+        </div>
+
+    </header>
+
+    <section class="container">
+    <aside class="menu__lateral">
+        <ul class="menu__lateral-lista">
+            <li class="menu__lateral-item menu">
+                    <p class="menu__lateral-titulo">MENU</p>
+            </li>
+            <li class="menu__lateral-item btn-editor">
+                <a class="menu__lateral-link" href="#">
+                    <img class="menu__lateral-imagem btn-code" src="img/icon_page_code.svg" alt="ícone do editor de código">
+                    <p class="menu__lateral-texto">Editor de código</p>
+                </a>
+            </li>
+            <li class="menu__lateral-item btn-comunidade">
+                <a class="menu__lateral-link" href="#">
+                    <img class="menu__lateral-imagem btn-user" src="img/Icon_page_comu.svg" alt="ícone comunidade">
+                    <p class="menu__lateral-texto">Comunidade</p>
+                </a>
+            </li>
+            <li class="menu__lateral-item usuário">
+                <a class="menu__lateral-link" href="#">
+                    <img class="menu__lateral-imagem" src="img/Photo.svg" alt="Foto do usuário">
+                    <p class="menu__lateral-texto">Harry</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <section class="editor__container">
+            <div class="editor__janela" id="photo">
+                <img class="editor__botões" src="img/mac_buttons.svg" alt="">
+                <code class="preview language-javascript" contenteditable="true" aria-label="Editor de código"></code>
+            </div>
+            <div id="output"></div>
+        <button class="editor__botão high">Visualizar com o highlight</button>
+            <button class="editor__botão mostrar">Exportar imagem</button>
+            <select class="editor__botão formato" name="formato">
+                <option class="opcão__formato" value="0">Selecionar formato</option>
+                <option class="opcão__formato" value="jpeg">Salvar como .jpeg</option>
+                <option class="opcão__formato" value="png">Salvar como .png</option>
+            </select>
+        <a id="link"></a>
+    </section>
+
+    <form class="formulário__container" action="">
+        <span class="formulário__texto">SEU PROJETO <strong class="chav"></strong></span>
+        <input class="formulário__campo nome" type="text" placeholder="Nome do seu projeto">
+        <textarea class="formulário__campo descrição" cols="20" rows="3" placeholder="Descrição do seu projeto"></textarea>
+        <span class="formulário__texto personalização">PERSONALIZAÇÃO</span>
+        <select class="formulário__select linguagem">
+            <option value="javascript">Javascript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+        <select class="selecionar-cor cor">
+            <option class="opção-cor" style="background-color:var(--azul-claro);" value="var(--azul-claro)">Azul</option>
+            <option class="opção-cor" style="background-color:orange;" value="orange">Laranja</option>
+            <option class="opção-cor" style="background-color: hotpink;" value="hotpink">Rosa</option>
+            <option class="opção-cor" style="background-color:greenyellow;" value="greenyellow">Verde</option>
+            <option class="opção-cor" style="background-color:mediumpurple;" value="mediumpurple">Roxo</option>
+        </select>
+        <input class="formulário__botão-salvar" type="submit" value="Salvar Projeto">
+    </form>
+
+    </section>
+    <script src="js/mudarCor.js"></script>
+    <script src="js/mostrarMenu.js"></script>
+    <script src="js/mostrarBarra.js"></script>
+    <script src="js/mudarPagina.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script>
+    <script src="js/mostrarHighlight.js"></script>
+    <script src="js/criarCard.js"></script>
+    <script src="js/editarCard.js"></script>
+    <script src="js/mostrarImagem.js"></script>
+</body>
+</html>
